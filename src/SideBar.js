@@ -26,7 +26,7 @@ const SideBar = (props) => {
     });
 
 return(
-    <div className = "sticky top-0 left-0 h-screen w-24 m-0 flex flex-col shadow bg-opacity-0 text-white">
+    <div className = "fixed top-0 left-0 h-screen w-20 m-0 flex flex-col shadow bg-opacity-0 text-white">
         <SideBarIcon icon = {<FaDiscord size = "28" color = "white" />}  text = {"Direct Messages"} onClick={() => updateActiveElement("discord-icon")} id = "discord-icon"/>
             <button className = "public "> public
         </button>
