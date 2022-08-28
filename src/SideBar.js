@@ -6,7 +6,10 @@ const SideBar = (props) => {
         "discord-icon",
         "poo-icon",
         "lightning-icon",
-        "add-icon"
+        "add-icon",
+        'shan-icon',
+        "ruch-icon",
+        "edward-icon"
     ]
     const [activeElement, setActiveElement] = useState("discord-icon");
     function updateActiveElement(iconId){
@@ -23,7 +26,7 @@ const SideBar = (props) => {
     });
 
 return(
-    <div className = "fixed top-0 left-0 h-screen w-16 m-0 flex flex-col shadow bg-opacity-0 text-white">
+    <div className = "sticky top-0 left-0 h-screen w-24 m-0 flex flex-col shadow bg-opacity-0 text-white">
         <SideBarIcon icon = {<FaDiscord size = "28" color = "white" />}  text = {"Direct Messages"} onClick={() => updateActiveElement("discord-icon")} id = "discord-icon"/>
             <button className = "public "> public
         </button>
@@ -31,6 +34,12 @@ return(
         <hr className='border-slate-300'></hr>
 
         </div>
+        <SideBarIcon icon ={
+            <img src = "./shan.jpg" className = "sidebar-icon"></img> } text = {"shan"} id = "shan-icon" onClick={() => updateActiveElement("shan-icon")}/>
+        <SideBarIcon icon ={
+            <img src = "./ruch.jpg" className = "sidebar-icon"></img> } text = {"ruch"} id = "ruch-icon" onClick={() => updateActiveElement("ruch-icon")}/>
+        <SideBarIcon icon ={
+            <img src = "./edward.jpg" className = "sidebar-icon"></img> } text = {"edward"} id = "edward-icon" onClick={() => updateActiveElement("edward-icon")}/>
         <SideBarIcon icon = {<BsPlus size = "32" />} text = {"add"} onClick={() => updateActiveElement("add-icon")} id = "add-icon"/>
         <SideBarIcon icon = {<BsFillLightningFill size = "20" />} text = "fill" id = "lightning-icon" onClick={() => updateActiveElement("lightning-icon")}/>
         <SideBarIcon icon = {<FaPoo size = "28" />} text = "poo" id = "poo-icon" onClick={() => updateActiveElement("poo-icon")}/>

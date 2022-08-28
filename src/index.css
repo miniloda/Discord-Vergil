@@ -24,7 +24,15 @@
   .sidebar-icon:hover>.sidebar-icon-style{
     @apply absolute top-0 left-0 w-full h-6 bg-blue-600 -ml-13 rounded-md mt-3 transition-all duration-200 ease-linear;
   }
+  .active>img{
+    @apply !rounded-2xl;
+  }
 }
 @layer base{
 
+}
+body{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
