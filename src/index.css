@@ -4,9 +4,27 @@
 
 @layer components{
   .sidebar-icon{
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-800 text-green-500 hover:bg-green-600 hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear cursor-pointer;
+    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto bg-gray-800 text-white hover:bg-blue-600 hover:text-white rounded-3xl hover:rounded-2xl transition-all duration-300 ease-linear cursor-pointer bg-opacity-30;
   }
   .sidebar-tooltip{
     @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
   }
+  .public{
+  @apply relative flex flex-col items-center justify-center bg-gray-900 text-white h-5 w-12 mx-auto p-2 font-mono text-xs hover:bg-blue-600 hover:text-white  transition-all duration-300 ease-linear cursor-pointer;
+  }
+  .active{
+    @apply !bg-blue-600 !rounded-2xl;
+  }
+  .sidebar-icon-style{
+    @apply absolute top-0 left-0 w-full h-4 bg-blue-600 -ml-13 rounded-xl mt-4 ;
+  }
+  .active>.sidebar-icon-style{
+    @apply absolute top-0 left-0 w-full !h-10 bg-blue-600 -ml-13 rounded-md !mt-1 ;
+  }
+  .sidebar-icon:hover>.sidebar-icon-style{
+    @apply absolute top-0 left-0 w-full h-6 bg-blue-600 -ml-13 rounded-md mt-3 transition-all duration-200 ease-linear;
+  }
+}
+@layer base{
+
 }
