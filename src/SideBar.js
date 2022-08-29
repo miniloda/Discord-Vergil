@@ -35,11 +35,11 @@ return(
 
         </div>
         <SideBarIcon icon ={
-            <img src = "./shan.jpg" className = "sidebar-icon"></img> } text = {"shan"} id = "shan-icon" onClick={() => updateActiveElement("shan-icon")}/>
+            <img src = {require("./shan.jpg")} className = "sidebar-icon"></img> } text = {"shan"} id = "shan-icon" onClick={() => updateActiveElement("shan-icon")}/>
         <SideBarIcon icon ={
-            <img src = "./ruch.jpg" className = "sidebar-icon"></img> } text = {"ruch"} id = "ruch-icon" onClick={() => updateActiveElement("ruch-icon")}/>
+            <img src = {require("./ruch.jpg")} className = "sidebar-icon"></img> } text = {"ruch"} id = "ruch-icon" onClick={() => updateActiveElement("ruch-icon")}/>
         <SideBarIcon icon ={
-            <img src = "./edward.jpg" className = "sidebar-icon"></img> } text = {"edward"} id = "edward-icon" onClick={() => updateActiveElement("edward-icon")}/>
+            <img src = {require("./edward.jpg")} className = "sidebar-icon"></img> } text = {"edward"} id = "edward-icon" onClick={() => updateActiveElement("edward-icon")}/>
         <SideBarIcon icon = {<BsPlus size = "32" />} text = {"add"} onClick={() => updateActiveElement("add-icon")} id = "add-icon"/>
         <SideBarIcon icon = {<BsFillLightningFill size = "20" />} text = "fill" id = "lightning-icon" onClick={() => updateActiveElement("lightning-icon")}/>
         <SideBarIcon icon = {<FaPoo size = "28" />} text = "poo" id = "poo-icon" onClick={() => updateActiveElement("poo-icon")}/>
