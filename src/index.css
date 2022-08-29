@@ -27,6 +27,7 @@
   .active>img{
     @apply !rounded-2xl;
   }
+  
 }
 @layer base{
 

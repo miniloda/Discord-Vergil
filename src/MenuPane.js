@@ -4,7 +4,8 @@ import {TbHeadphones} from 'react-icons/tb'
 import {BiMicrophone} from 'react-icons/bi'
 import {BiMicrophoneOff} from 'react-icons/bi'
 import {useState, useEffect} from 'react';
-
+import DirectMessagesMenu from './DirectMessagesMenu';
+import { FaDiscord } from 'react-icons/fa'
 const MenuPane = ({handleOpen}, props)=>{
    const [isMuted, setMuted] = useState(false);
    const [isDeafend, setDeafend] = useState(false);
@@ -19,16 +20,23 @@ const MenuPane = ({handleOpen}, props)=>{
          setMuted(false);
          unmutedAudio.play();
    }
-   return( <div className = "fixed top-0 left-16 h-screen w-56 flex flex-col shadow bg-opacity-20 bg-black text-white">
+   return(
+       <div className = "fixed top-0 left-16 h-screen w-56 flex flex-col shadow bg-opacity-20 bg-black text-white">
          <div className = "w-full h-14 border-b border-slate-600 flex justify-center items-center">
             <div className = "bg-gray-700 h-8 rounded-md w-48 bg-opacity-70 flex items-center hover:cursor-pointer"  onClick = {handleOpen}>
                <button className = "text-gray-500 text-xs p-2">
                   Find or start a conversation
                </button>
             </div>
+            </div>
+            <div>
+               <DirectMessagesMenu />
+            </div>
             <div className = "fixed w-56 h-12 bg-black bottom-0 bg-opacity-20 flex items-center menu-settings">
-               <div className = "w-28">
-
+               <div className = "w-28 flex items-center h-full ml-2">
+                  <div className = "flex justify-center items-center h-8 bg-blue-600  w-8 rounded-full">
+                  <FaDiscord className = "text-white text-2xl" />
+                  </div>
                </div>
                <div className = "w-28 flex justify-evenly">
 
@@ -52,14 +60,13 @@ const MenuPane = ({handleOpen}, props)=>{
 
                </button>
                </div>
-               <div id="tooltip-hover" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+               <div id="tooltip-hover" role="tooltip" className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
     Tooltip content
-    <div class="tooltip-arrow" data-popper-arrow></div>
+    <div className="tooltip-arrow" data-popper-arrow></div>
 </div>
                </div>
             </div>
          </div>
-    </div>
    )
 }
 export default MenuPane;
