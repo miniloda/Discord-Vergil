@@ -3,11 +3,22 @@ import {TbHeadphonesOff} from 'react-icons/tb'
 import {TbHeadphones} from 'react-icons/tb'
 import {BiMicrophone} from 'react-icons/bi'
 import {BiMicrophoneOff} from 'react-icons/bi'
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
+
 const MenuPane = ({handleOpen}, props)=>{
-   
-   const [isMuted, setMuted] = useState(true);
+   const [isMuted, setMuted] = useState(false);
    const [isDeafend, setDeafend] = useState(false);
+   const mutedAudio = new Audio(require("./assets/discord-muted.mp3"))
+   const unmutedAudio = new Audio(require("./assets/discord-unmuted.mp3"))
+   function mute(){
+      console.log("?")
+       setMuted(true);
+       mutedAudio.play();
+   }
+   function unmute(){
+         setMuted(false);
+         unmutedAudio.play();
+   }
    return( <div className = "fixed top-0 left-16 h-screen w-56 flex flex-col shadow bg-opacity-20 bg-black text-white">
          <div className = "w-full h-14 border-b border-slate-600 flex justify-center items-center">
             <div className = "bg-gray-700 h-8 rounded-md w-48 bg-opacity-70 flex items-center hover:cursor-pointer"  onClick = {handleOpen}>
@@ -23,13 +34,13 @@ const MenuPane = ({handleOpen}, props)=>{
 
                <div className = "">
 
-               {isMuted ? <BiMicrophoneOff size = "20" className = "text-gray-400 text-2xl hover:cursor-pointer" onClick = {()=>setMuted(false)}/> : <BiMicrophone size = "20" className  = "text-gray-500 text-2xl hover:cursor-pointer hover:text-gray-300" onClick = {()=>setMuted(true)}/>}
+               {isMuted ? <BiMicrophoneOff size = "20" className = "text-gray-400 text-2xl hover:cursor-pointer" onClick = {() => unmute(false)}/> : <BiMicrophone size = "20" className  = "text-gray-500 text-2xl hover:cursor-pointer hover:text-gray-300" onClick = {()=>mute(true)}/>}
                </div>
                <div className = "h-6 border-r border-gray-600">
 
                </div>
                <div className = "">
-               {isDeafend ? <TbHeadphonesOff size = "20" className = "text-gray-400 hover:cursor-pointer" onClick = {()=>setDeafend(false)}/> : <TbHeadphones size = "20" className = "text-gray-500 hover:cursor-pointer hover:text-gray-300" onClick = {()=>setDeafend(true)}/>}
+               {isDeafend ? <TbHeadphonesOff size = "20" className = "text-gray-400 hover:cursor-pointer" onClick = {()=>setDeafend(false)} /> : <TbHeadphones size = "20" className = "text-gray-500 hover:cursor-pointer hover:text-gray-300" onClick = {()=>setDeafend(true)}/>}
 
                </div>
                <div className = "h-6 border-r border-gray-600">
