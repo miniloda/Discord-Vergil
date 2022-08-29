@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/Discord-Vergil/static/css/main.d51a82f8.css",
-    "main.js": "/Discord-Vergil/static/js/main.3bd1c1a2.js",
+    "main.css": "/Discord-Vergil/static/css/main.03e449fa.css",
+    "main.js": "/Discord-Vergil/static/js/main.acd0f1ed.js",
     "static/js/787.f811b3e5.chunk.js": "/Discord-Vergil/static/js/787.f811b3e5.chunk.js",
+    "static/media/vergil.jpg": "/Discord-Vergil/static/media/vergil.6914b8a3ad7be3c99cc2.jpg",
+    "static/media/ruch.jpg": "/Discord-Vergil/static/media/ruch.e777e4aea1b3a9eddd16.jpg",
+    "static/media/edward.jpg": "/Discord-Vergil/static/media/edward.ada1c66815abe02f16b7.jpg",
+    "static/media/shan.jpg": "/Discord-Vergil/static/media/shan.e321a9f7295c9afe8de1.jpg",
     "static/media/logo.svg": "/Discord-Vergil/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Discord-Vergil/index.html",
-    "main.d51a82f8.css.map": "/Discord-Vergil/static/css/main.d51a82f8.css.map",
-    "main.3bd1c1a2.js.map": "/Discord-Vergil/static/js/main.3bd1c1a2.js.map",
+    "main.03e449fa.css.map": "/Discord-Vergil/static/css/main.03e449fa.css.map",
+    "main.acd0f1ed.js.map": "/Discord-Vergil/static/js/main.acd0f1ed.js.map",
     "787.f811b3e5.chunk.js.map": "/Discord-Vergil/static/js/787.f811b3e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d51a82f8.css",
-    "static/js/main.3bd1c1a2.js"
+    "static/css/main.03e449fa.css",
+    "static/js/main.acd0f1ed.js"
   ]
 }
