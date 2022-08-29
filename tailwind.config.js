@@ -38,7 +38,9 @@ module.exports = {
       },
       spacing: {
         "13": "3.2rem",
-        "120": "23rem"
+        "120": "18rem",
+        "18": "4.5rem",
+        "90": "360px",
       },
       backgroundImage: {
         'vergil' : "url('/vergil.jpg')",
