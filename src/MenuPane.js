@@ -34,8 +34,8 @@ const MenuPane = ({handleOpen}, props)=>{
             </div>
             <div className = "fixed w-56 h-12 bg-black bottom-0 bg-opacity-20 flex items-center menu-settings">
                <div className = "w-28 flex items-center h-full ml-2">
-                  <div className = "flex justify-center items-center h-8 bg-blue-600  w-8 rounded-full">
-                  <FaDiscord className = "text-white text-2xl" />
+                  <div className = "flex justify-center items-center h-8 bg-blue-600  w-8 rounded-full hover:scale-125 hover:cursor-pointer transition-all ease-in-out duration-300">
+                  <FaDiscord className = "text-white text-2xl hover:scale-110 transition-all ease-in-out duration-300" />
                   </div>
                </div>
                <div className = "w-28 flex justify-evenly">
@@ -56,7 +56,7 @@ const MenuPane = ({handleOpen}, props)=>{
                </div>
                <div className = "px-1">
                <button data-tooltip-target="tooltip-hover" data-tooltip-trigger="hover" type="button">
-               <BsFillGearFill size = "20" className = "text-gray-400 hover:cursor-pointer" />
+               <BsFillGearFill size = "20" className = "text-gray-400 hover:cursor-pointer " />
 
                </button>
                </div>

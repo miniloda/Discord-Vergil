@@ -27,7 +27,10 @@
   .active>img{
     @apply !rounded-2xl;
   }
-  
+  .dm-active{
+    @apply !bg-blue-500 hover:!bg-blue-500 hover:!bg-opacity-100 transition-all 
+  }
+
 }
 @layer base{
 
