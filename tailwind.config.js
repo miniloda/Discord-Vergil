@@ -41,6 +41,7 @@ module.exports = {
         "120": "18rem",
         "18": "4.5rem",
         "90": "360px",
+        "500px": "500px",
       },
       backgroundImage: {
         'vergil' : "url('/vergil.jpg')",

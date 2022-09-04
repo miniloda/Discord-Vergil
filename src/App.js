@@ -10,6 +10,7 @@ export default function App() {
    const handleOpen = () => { console.log("?")
    setOpen(true)
 };
+ const [isMobile, setIsMobile] = useState(false);
    const handleClose = () => {
     console.log("?")
     setOpen(false);
